@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+	<title></title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body ng-app ng-init="score=0;">
+
+<!-- INTRODUCTION SECTION -->
+<section class="hero is-primary is-fullheight">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Is your intranet fit for purpose?
+      	</h1>
+      	<br>
+      	<h2 class="subtitle">
+        Do you feel your company is getting the most out of your employee intranet? 
+
+		A successful intranet supports collaboration, drives communication and furthers your company’s mission – but too often, we invest in great software only for it to fall flat. Answer the questions below to evaluate the performance of your intranet and discover how well it’s working for you.
+      	</h2>
+
+		<a class="button is-primary is-inverted is-large" id="gss">Get Started</a>
+
+		</div>
+	</div>
+</section>
+
+
+<section class="hero is-fullheight is-light" id="q1">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Is your current intranet used by all departments?   
+      	</h1>
+      	<br>
+  
+        <p>
+		  <label class="radio" for="q1y">
+		    <input type="radio" id="q1y" name="q1model" ng-model="q1model" value="y" ng-click="score = score+1">
+		    Yes
+		  </label>
+		  <label class="radio" for="q1n">
+		    <input type="radio" id="q1n" name="q1model" ng-model="q1model" value="n">
+		    No
+		  </label>
+		</p>
+
+		<div class="quizFeedback">
+      		<p ng-show="q1model == 'y'">
+      			Good work!
+      			<br>
+      			<a class="button is-info is-outlined" href="https://www.interact-intranet.com/9-things-your-intranet-must-do/" target="_blank">Find out More</a>
+      		</p>
+      		<p ng-show="q1model == 'n'">
+      			Different departments have different needs, requiring a variety of tools, functions and means of collaborating. Your intranet should cater to those different communities. Consider an audit of your intranet functions or a staff survey to discover where the gaps are. 
+      			<br>
+      			<a class="button is-info is-outlined" href="https://www.interact-intranet.com/9-things-your-intranet-must-do/" target="_blank">Find out More</a>
+      	    </p>
+    	</div>
+
+      
+
+		
+      	
+
+		</div>
+	</div>
+
+	<i id="q1s" class="fa fa-chevron-down fa-2x whiteScroller"></i>
+</section>
+
+<section class="hero is-fullheight" id="q2">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Do teams collaborate on your intranet?
+      	</h1>
+      	<br>
+  
+        <p>
+		  <label class="radio" for="q2y">
+		    <input type="radio" id="q2y" name="q2model" ng-model="q2model" value="y" ng-click="score = score+1">
+		    Yes
+		  </label>
+		  <label class="radio" for="q2n">
+		    <input type="radio" id="q2n" name="q2model" ng-model="q2model" value="n">
+		    No
+		  </label>
+		</p>
+
+		<div class="quizFeedback">
+      		<p ng-show="q2model == 'y'">
+      			Great!
+      			<br>
+      			<a class="button is-info is-outlined" href="https://www.interact-intranet.com/resources/intranet-guides/improve-employee-collaboration/" target="_blank">Find out More</a>
+      		</p>
+      		<p ng-show="q2model == 'n'">
+      			Your intranet should enable knowledge sharing and collaboration through features like forums, blogging, social tools and an intelligent search function, as well as being a document management system with version control so employees have a single source of the truth. Without these functions, employees will struggle to collaborate efficiently. 
+      			<br>
+      			<a class="button is-info is-outlined" href="https://www.interact-intranet.com/resources/intranet-guides/improve-employee-collaboration/" target="_blank">Find out More</a>
+      	    </p>
+    	</div>
+      	
+
+		</div>
+	</div>
+	<i id="q2s" class="fa fa-chevron-down fa-2x whiteScroller"></i>
+</section>
+
+<section class="hero is-light is-fullheight" id="q3">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Does your intranet suggest content by learning your searching and browsing habits?
+      	</h1>
+      	<br>
+  
+          <p>
+		  <label class="radio" for="q3y">
+		    <input type="radio" id="q3y" name="q3model" ng-model="q3model" value="y" ng-click="score = score+1">
+		    Yes
+		  </label>
+		  <label class="radio" for="q3n">
+		    <input type="radio" id="q3n" name="q3model" ng-model="q3model" value="n">
+		    No
+		  </label>
+		</p>
+
+		<div class="quizFeedback">
+      		<p ng-show="q3model == 'y'">
+      			Wonderful
+      			<br>
+      			<a class="button is-info is-outlined" href="https://www.interact-intranet.com/10-ways-to-increase-productivity-with-an-intelligent-intranet/" target="_blank">Find out More</a>
+      		</p>
+      		<p ng-show="q3model == 'n'">
+      			With the sheer amount of data and information created by organizations these days, employees need all the help they can get to find useful content. Consider upgrading to an intelligent intranet with search and suggestion functions that will support your employees in being more productive.
+      			<br>
+      			<a class="button is-info is-outlined" href="https://www.interact-intranet.com/10-ways-to-increase-productivity-with-an-intelligent-intranet/" target="_blank">Find out More</a>
+      	    </p>
+    	</div>
+
+		</div>
+	</div>
+	<i id="q3s" class="fa fa-chevron-down fa-2x whiteScroller"></i>
+</section>
+
+<section class="hero is-fullheight" id="q4">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Does your intranet offer quantitative insight into engagement, intranet usage, search metrics, and more?
+      	</h1>
+      	<br>
+  
+          <p>
+		  <label class="radio" for="q4y">
+		    <input type="radio" id="q4y" name="q4model" ng-model="q4model" value="y" ng-click="score = score+1">
+		    Yes
+		  </label>
+		  <label class="radio" for="q4n">
+		    <input type="radio" id="q4n" name="q4model" ng-model="q4model" value="n">
+		    No
+		  </label>
+		</p>
+
+		<div class="quizFeedback">
+      		<p ng-show="q4model == 'y'">
+      			Great!
+      			<br>
+      			<a class="button is-info is-outlined" href="https://www.interact-intranet.com/product/features/interact-intranet-analytics/" target="_blank">Find out More</a>
+      		</p>
+      		<p ng-show="q4model == 'n'">
+      			Intranet analytics offer a powerful way of gaining insight into the inner workings of your organization. Learn how employees collaborate, what challenges they face and where they thrive – and apply that knowledge to improving your intranet performance.  
+
+
+      			<br>
+      			<a class="button is-info is-outlined" href="https://www.interact-intranet.com/product/features/interact-intranet-analytics/" target="_blank">Find out More</a>
+      	    </p>
+    	</div>
+      	
+
+		</div>
+	</div>
+	<i id="q4s" class="fa fa-chevron-down fa-2x whiteScroller"></i>
+</section>
+
+<section class="hero is-light is-fullheight" id="q5">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Can your intranet be accessed on multiple devices?
+      	</h1>
+      	<br>
+  
+        
+          <p>
+		  <label class="radio" for="q5y">
+		    <input type="radio" id="q5y" name="q5model" ng-model="q5model" value="y" ng-click="score = score+1">
+		    Yes
+		  </label>
+		  <label class="radio" for="q5n">
+		    <input type="radio" id="q5n" name="q5model" ng-model="q5model" value="n">
+		    No
+		  </label>
+		</p>
+
+		<div class="quizFeedback">
+      		<p ng-show="q5model == 'y'">
+      			Congratulations!
+      			<br>
+      			<a class="button is-info is-outlined">Find out more</a>
+      		</p>
+      		<p ng-show="q5model == 'n'">
+      			More people than ever are telecommuting or collaborating outside normal work hours. In fact, by 2018 more than half of online interactions will take place on a mobile device. Don’t lose countless opportunities to have your intranet add value because employees can only access it on their computer.
+      			<br>
+      			<a class="button is-info is-outlined">Find out More</a>
+      	    </p>
+    	</div>
+      	
+
+		</div>
+	</div>
+	<i id="q5s" class="fa fa-chevron-down fa-2x whiteScroller"></i>
+</section>
+
+<section class="hero is-fullheight" id="q6">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Is your intranet hosted in the cloud?
+      	</h1>
+      	<br>
+  
+        <p>
+		  <label class="radio" for="q6y">
+		    <input type="radio" id="q6y" name="q6model" ng-model="q6model" value="y" ng-click="score = score+1">
+		    Yes
+		  </label>
+		  <label class="radio" for="q6n">
+		    <input type="radio" id="q6n" name="q6model" ng-model="q6model" value="n">
+		    No
+		  </label>
+		</p>
+
+		<div class="quizFeedback">
+      		<p ng-show="q6model == 'y'">
+      			Good news!
+      			<br>
+      			<a class="button is-info is-outlined">Find out more</a>
+      		</p>
+      		<p ng-show="q6model == 'n'">
+      			The benefits to cloud are myriad and evidenced by how rapidly cloud technology is being adopted at the enterprise level. Aside from enabling mobile connectivity, it allows for more frequent software updates, easy data recovery and improves productivity and innovation. Is it time your intranet made the move? 
+      			<br>
+      			<a class="button is-info is-outlined">Find out More</a>
+      	    </p>
+    	</div>
+		
+
+		</div>
+	</div>
+	<i id="q6s" class="fa fa-chevron-down fa-2x whiteScroller"></i>
+</section>
+
+<section class="hero is-light is-fullheight" id="q7">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Can your intranet integrate content or profiles from other applications?
+      	</h1>
+      	<br>
+  
+        <p>
+		  <label class="radio" for="q7y">
+		    <input type="radio" id="q7y" name="q7model" ng-model="q7model" value="y" ng-click="score = score+1">
+		    Yes
+		  </label>
+		  <label class="radio" for="q7n">
+		    <input type="radio" id="q7n" name="q7model" ng-model="q7model" value="n">
+		    No
+		  </label>
+		</p>
+
+		<div class="quizFeedback">
+      		<p ng-show="q7model == 'y'">
+      			Brilliant!
+      			<br>
+      			<a class="button is-info is-outlined">Find out more</a>
+      		</p>
+      		<p ng-show="q7model == 'n'">
+      			Though the app revolution has undoubtedly made our lives easier, the clutter from multiple logins and profiles can slow users down and make it difficult to manage and share knowledge. Intranets that can integrate information from third party applications become a central hub for your digital workplace, making the experience of work more seamless and helping manage crucial information.
+      			<br>
+      			<a class="button is-info is-outlined">Find out More</a>
+      	    </p>
+    	</div>
+      	
+
+		</div>
+	</div>
+	<i id="q7s" class="fa fa-chevron-down fa-2x whiteScroller"></i>
+</section>
+
+<section class="hero is-fullheight" id="q8">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Does your intranet require a fulltime intranet manager or significant involvement from IT?
+      	</h1>
+      	<br>
+  
+        <p>
+		  <label class="radio" for="q8y">
+		    <input type="radio" id="q8y" name="q8model" ng-model="q8model" value="y">
+		    Yes
+		  </label>
+		  <label class="radio" for="q8n">
+		    <input type="radio" id="q8n" name="q8model" ng-model="q8model" value="n" ng-click="score = score+1">
+		    No
+		  </label>
+		</p>
+
+		<div class="quizFeedback">
+      		<p ng-show="q8model == 'y'">
+      			That’s a lot of resources you’re using to maintain your intranet. Consider a solution that gives you all the power of a social intranet while minimizing your effort upfront. Effective intranets can be managed simply and intuitively by existing employees within your business, with minimal training or specialist skills.
+      			<br>
+      			<a class="button is-info is-outlined">Find out more</a>
+      		</p>
+      		<p ng-show="q8model == 'n'">
+      			Great!  
+      			<br>
+      			<a class="button is-info is-outlined">Find out More</a>
+      	    </p>
+    	</div>
+      	
+
+		</div>
+	</div>
+	<i id="q8s" class="fa fa-chevron-down fa-2x whiteScroller"></i>
+</section>
+
+
+<section class="hero is-primary is-fullheight" id="eval">
+	<div class="hero-body has-text-centered">
+		<div class="container">
+		
+		<h1 class="title">
+        Final evaluation
+      	</h1>
+      	<br>
+      	<h2 class="subtitle" ng-if="(score/8) <= 0.6">
+        Danger! Your intranet may be causing more harm than good – chances are, it’s time for a review. Whether you’ve got a great piece of software that you’re just not utilising or your platform is outdated and unfit for purpose, you could be doing more to engage and connect members of your organization. Start building collaboration with this great collection of resources:
+        <br>
+        <br>
+        Time for a new internet? This guide to <a href="https://www.interact-intranet.com/resources/#guides-sec">Planning and Deploying a Successful Intranet</a> will get you going. 
+        <br>
+        <br>
+        Time for an intranet facelift? Check out this eBook on<a href="https://www.interact-intranet.com/resources/intranet-guides/planning-deploying-a-successful-intranet/"> ’10 Things you must do to make your intranet no.1’ </a> or get some inspiration from these great intranet designs in the <a href="https://www.interact-intranet.com/resources/intranet-guides/intranet-design-annual-2016/">Intranet Design Annual 2016!</a>
+      	</h2>
+
+        <h2 class="subtitle" ng-if="(score/8) <= 0.8 && (score/8) > 0.6">
+        Your intranet isn’t quite failing its performance review, but it’s in need of some attention. You may have some enthusiastic users at your organization that engage with it from time to time, but there is too much untapped potential you could be exploring for your digital workspace. Your intranet is a powerful tool to engage and connect members of your organization; get more benefit from it and start building collaboration with this great collection of resources:
+        <br>
+        <br>
+        What role should your intranet be playing? Find out with this great FREE webinar: <a href="https://www.interact-intranet.com/resources/webinars/intranets-are-they-still-relevant/">Intranets: Are they still relevant? </a>
+        <br>
+        <br>
+        Ensure your intranet is driving your internal communications strategy. Check out this guest post from Canadian market leader Maxxam on <a href="https://www.interact-intranet.com/12-intranet-best-practice-ingredients-to-ignite-your-internal-communications/">12 intranet best practice ingredients to ignite your internal communications. </a>
+        </h2>
+        <h2 class="subtitle" ng-if="(score/8) > 0.8">
+        Looks like you’ve got a star on your hands. Your intranet is doing a great job of connecting workers, keeping them engaged, and allowing powerful collaboration. However, the best performing intranets are those that continually evolve and grow with fresh content, new features and engaging communication. Check out some of our great resources to see if there is even more that your intranet could be doing for you.
+        <br>
+        <br>
+        Time for a re-brand or Intranet facelift? Get some inspiration from this great <a href="https://www.interact-intranet.com/resources/intranet-guides/intranet-design-annual-2016/">Intranet Design Annual 2016.</a>
+        <br>
+        <br>
+        Don’t let your intranet slip or lose its gold star: check out these <a href="https://www.interact-intranet.com/20-steps-to-maintaining-an-effective-intranet/"> 20 steps to maintaining an effective intranet. </a>
+
+
+        </h2>
+
+		</div>
+	</div>
+</section>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+<script type="text/javascript">
+	$("#gss").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#q1").offset().top
+    }, 600);
+});
+
+	$("#q1s").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#q2").offset().top
+    }, 600);
+});
+
+	$("#q2s").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#q3").offset().top
+    }, 600);
+});
+  
+	$("#q3s").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#q4").offset().top
+    }, 600);
+});
+
+	$("#q4s").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#q5").offset().top
+    }, 600);
+});
+
+	$("#q5s").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#q6").offset().top
+    }, 600);
+});
+
+	$("#q6s").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#q7").offset().top
+    }, 600);
+});
+
+	$("#q7s").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#q8").offset().top
+    }, 600);
+});
+
+	$("#q8s").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#eval").offset().top
+    }, 600);
+});
+
+  
+
+
+</script>
+
+</body>
+</html>
